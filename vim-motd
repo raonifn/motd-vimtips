@@ -1,0 +1,4 @@
+#!/bin/bash
+dir=$(dirname $0)
+
+notify-send --icon=gtk-info VimTip "$($dir/motd.awk $dir/vimtips.txt)"

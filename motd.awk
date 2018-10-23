@@ -5,9 +5,5 @@ BEGIN {
     srand()
     target=int(rand() * 1309 + 1)
 }
-/^VimTip/ {
-    count++
-}
-count == target {
-    print
-}
+/^VimTip/ { count++ }
+count == target { print }
